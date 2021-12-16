@@ -1,6 +1,9 @@
 body {
   background-image: url('./images/star-wars-backgrounds-08.jpg');
-  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   margin: 0;
 }
 
