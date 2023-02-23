@@ -7,6 +7,7 @@ export default function Table() {
 
   const handleTitles = () => (Object.keys(data[0])
     .filter((key) => !key.includes('residents'))
+    .filter((key) => !key.includes('films'))
     .map((title, index) => (
       <th key={ index }>
         { title.charAt(0).toUpperCase() + title.slice(1).replace('_', ' ') }
@@ -24,7 +25,7 @@ export default function Table() {
       <td>{ planet.terrain }</td>
       <td>{ planet.surface_water }</td>
       <td>{ planet.population }</td>
-      <td>{ planet.films }</td>
+      {/* <td>{ planet.films }</td> */}
       <td>{ planet.created }</td>
       <td>{ planet.edited }</td>
       <td>{ planet.url }</td>
